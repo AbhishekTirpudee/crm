@@ -1,0 +1,166 @@
+/* Settings Page Styles */
+.settings-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-header {
+    margin-bottom: 2rem;
+}
+
+.settings-tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 2rem;
+}
+
+.settings-tab {
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    color: #6b7280;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.settings-tab:hover {
+    color: var(--primary);
+    background-color: #f9fafb;
+}
+
+.settings-tab.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.settings-content {
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 2rem;
+    border: 1px solid var(--border);
+}
+
+.access-denied {
+    padding: 4rem;
+    text-align: center;
+    color: var(--danger);
+}
+
+/* User Management Styles */
+.user-management-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.user-status {
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.user-status.active {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.user-status.locked {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-lock {
+    color: #d97706;
+}
+
+.btn-lock:hover {
+    color: #b45309;
+}
+
+.btn-unlock {
+    color: #059669;
+}
+
+.btn-unlock:hover {
+    color: #047857;
+}
+
+.btn-reset {
+    color: #4f46e5;
+}
+
+.btn-reset:hover {
+    color: #4338ca;
+}
+
+/* Lead Transfer Styles */
+.lead-transfer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.transfer-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+
+.transfer-column {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+}
+
+.transfer-column.target {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.droppable-area {
+    min-height: 300px;
+    transition: background-color 0.2s;
+}
+
+.draggable-item {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+}
+
+/* Sales Config Styles */
+.sales-config-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.config-section {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.config-section:last-child {
+    border-bottom: none;
+}
